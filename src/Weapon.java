@@ -15,7 +15,7 @@ public class Weapon implements Attack{
 
     }
     public void toShoot(double x, double y, double angle, Direction direction) {
-        bullets.addLast(new Bullet(x, y, 40, angle, 30, direction, image_bullet));
+        bullets.addLast(new Bullet(x, y, 30, angle, 35, direction, image_bullet));
     }
     public void draw(Graphics g) {
         for (int i = 0; i < bullets.size(); i++) {
