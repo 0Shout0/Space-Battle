@@ -16,11 +16,11 @@ public class Ship extends Unit implements HealthPoint {
         int dy = (int)(-Math.cos(angle) * speed);
         if (direction.up) {
             x = (x + dx + 1400) % 1400;
-            y = (y + dy + 750) % 750;
+            y = (y + dy + 730) % 730;
         }
         if (direction.down) {
             x = (x - dx + 1400) % 1400;
-            y = (y - dy + 750) % 750;
+            y = (y - dy + 730) % 730;
         }
         if (direction.left) {
             angle -= 0.1;
